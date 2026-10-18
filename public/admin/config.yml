@@ -6,7 +6,7 @@
 # ============================================================================
 backend:
   name: github
-  repo: passionventures05/passion-gifts
+  repo: passionventures05/passion-bakery-gifts
   branch: main
   base_url: https://passion-gifts-cms-auth.passionventures.workers.dev
   auth_endpoint: auth
