@@ -1,0 +1,15 @@
+{
+  "available": true,
+  "name": "Vanilla Bean Jar Candle",
+  "category": "Jar Candles",
+  "order": 70,
+  "basePrice": 399,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc",
+    "4pc"
+  ],
+  "description": "A creamy, comforting vanilla in a reusable glass jar with a wooden lid. About 35 hours of burn time."
+}

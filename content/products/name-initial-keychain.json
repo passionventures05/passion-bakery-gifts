@@ -1,0 +1,15 @@
+{
+  "available": true,
+  "name": "Name & Initial Keychain",
+  "category": "Keychains & Jewellery",
+  "order": 40,
+  "basePrice": 299,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc",
+    "5pc"
+  ],
+  "description": "Personalised with a name or initial in your choice of colours and glitter. Tell us the name when you order."
+}

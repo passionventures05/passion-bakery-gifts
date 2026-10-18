@@ -1,0 +1,12 @@
+{
+  "available": true,
+  "name": "Geode Serving Tray",
+  "category": "Coasters & Trays",
+  "order": 20,
+  "basePrice": 1799,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc"
+  ],
+  "description": "A statement tray with agate-style layers, crushed crystals and a gold-flake edge, with brass handles."
+}

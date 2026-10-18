@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Scented Candles photo coming soon">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#872657"/><stop offset="1" stop-color="#11124a"/></linearGradient></defs>
+<rect width="600" height="600" fill="url(#g)"/><g transform="translate(300 270)" stroke-linejoin="round"><rect x="-45" y="-30" width="90" height="140" rx="12" fill="#ffb6c1"/><rect x="-45" y="-30" width="90" height="26" rx="8" fill="#fff"/><path d="M0 -120C-30 -85 -26 -58 0 -50 26 -58 30 -85 0 -120Z" fill="#ffd700"/><path d="M0 -50V-30" stroke="#fff" stroke-width="5"/></g>
+<text x="300" y="470" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#fff" font-style="italic">Scented Candles</text>
+<text x="300" y="510" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#ffd700" letter-spacing="3">PHOTO COMING SOON</text></svg>

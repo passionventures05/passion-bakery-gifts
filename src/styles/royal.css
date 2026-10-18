@@ -1,0 +1,231 @@
+/* =====================================================================
+   ROYAL LAYER — loaded last on every page.
+   Same palette as before (purple, navy, gold, pink). No new colours, no gradients.
+   It adds: flat single-colour surfaces, gold framing, refined type and calmer motion.
+   ===================================================================== */
+
+/* ---------- Global polish ---------- */
+html { scrollbar-color: #7e5dae #ffb6c1; }
+::selection { background: #ffd700; color: #11124a; }
+.site a:focus-visible,
+.site button:focus-visible,
+.site input:focus-visible,
+.site select:focus-visible,
+.site textarea:focus-visible,
+.site [role="button"]:focus-visible,
+.site [tabindex]:focus-visible {
+  outline: 2px solid #11124a;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #ffd700;
+}
+
+/* ---------- Navigation: flat purple, gold lettering, gold hairline ---------- */
+.site .topnav.lx-nav {
+  background: #7e5dae;
+  border-bottom: 1px solid #ffd700;
+  box-shadow: 0 10px 30px rgba(17, 18, 74, 0.28);
+}
+.site .lx-nav .nav-brand-name {
+  color: #ffd700;
+  text-shadow: 0 1px 8px rgba(17, 18, 74, 0.45);
+}
+.site .lx-nav .nav-links a,
+.site .lx-nav .cart-icon {
+  border-radius: 0;
+  color: #ffd700;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+.site .lx-nav .nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 4px;
+  height: 1px;
+  background: #ffd700;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s var(--lx-ease);
+}
+.site .lx-nav .nav-links a:hover,
+.site .lx-nav .cart-icon:hover {
+  background: transparent;
+  color: #ffe680;
+  transform: none;
+  box-shadow: none;
+}
+.site .lx-nav .nav-links a:hover::after,
+.site .lx-nav .nav-links a:focus-visible::after { transform: scaleX(1); }
+.site .lx-nav .nav-links a.active {
+  background: #11124a;
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.6);
+  box-shadow: none;
+}
+.site .lx-nav .nav-links a.active::after { display: none; }
+.site .lx-nav .cart-count { background: #11124a; color: #ffd700; }
+.site .lx-nav .nav-toggle,
+.site .lx-nav.responsive .nav-toggle {
+  background: #11124a;
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.6);
+}
+@media screen and (max-width: 960px) {
+  .site .lx-nav .nav-links {
+    background: #7e5dae;
+    border-bottom: 1px solid #ffd700;
+  }
+  .site .lx-nav .nav-links a { font-size: 0.82rem; padding: 15px 16px; border-bottom: 1px solid rgba(255, 215, 0, 0.18); }
+  .site .lx-nav .nav-links a::after { display: none; }
+  .site .lx-nav .nav-links a:hover { background: #11124a; }
+}
+
+/* ---------- Section headings: ornament instead of a plain line ---------- */
+.site .lx-head .lx-title { letter-spacing: 0.02em; }
+.site .lx-head .lx-title::after {
+  width: 150px;
+  height: 14px;
+  margin: 16px auto 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='14' viewBox='0 0 150 14'%3E%3Cpath d='M0 7h58M92 7h58' stroke='%23ffd700' stroke-width='1' opacity='.85'/%3E%3Cpath d='M75 1l6 6-6 6-6-6z' fill='%23ffd700'/%3E%3Ccircle cx='62' cy='7' r='1.6' fill='%23ffd700'/%3E%3Ccircle cx='88' cy='7' r='1.6' fill='%23ffd700'/%3E%3C/svg%3E") center / contain no-repeat;
+  opacity: 1;
+}
+.site .lx-head.on-light .lx-title::after {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='14' viewBox='0 0 150 14'%3E%3Cpath d='M0 7h58M92 7h58' stroke='%2311124a' stroke-width='1' opacity='.7'/%3E%3Cpath d='M75 1l6 6-6 6-6-6z' fill='%23872657'/%3E%3Ccircle cx='62' cy='7' r='1.6' fill='%23872657'/%3E%3Ccircle cx='88' cy='7' r='1.6' fill='%23872657'/%3E%3C/svg%3E") center / contain no-repeat;
+  opacity: 1;
+}
+
+/* ---------- Purple panels: flat colour + a fine gold inner frame ---------- */
+.page-home section#featured-products,
+.page-home section#about-me,
+.page-home section#contact-me,
+.page-home section#customer-reviews,
+.page-home section#gallery,
+.page-home section#faq {
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #ffd700;
+  box-shadow: 0 18px 44px rgba(17, 18, 74, 0.28);
+  padding-top: clamp(40px, 7vw, 72px);
+  padding-bottom: clamp(40px, 7vw, 72px);
+}
+.page-home section#featured-products::after,
+.page-home section#about-me::after,
+.page-home section#contact-me::after,
+.page-home section#customer-reviews::after,
+.page-home section#gallery::after,
+.page-home section#faq::after {
+  content: "";
+  position: absolute;
+  inset: clamp(5px, 1vw, 10px);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+/* ---------- Hero ---------- */
+.page-home #banner.lx-hero { padding-top: clamp(18px, 3vw, 34px); padding-bottom: clamp(18px, 3vw, 34px); }
+.lx-hero-media {
+  border-radius: 4px;
+  border: 2px solid #ffd700;
+  outline: 1px solid rgba(255, 215, 0, 0.75);
+  outline-offset: 7px;
+  box-shadow: 0 28px 70px rgba(17, 18, 74, 0.34);
+}
+.lx-hero-media .bn-slide img { aspect-ratio: 16 / 9; }
+.lx-hero-media img { transform: none; }
+.bn-arrow { border-radius: 50%; background: rgba(17, 18, 74, 0.7); }
+.bn-arrow:hover, .bn-arrow:focus-visible { background: #11124a; color: #ffd700; border-color: #ffd700; }
+.bn-dot { border-radius: 2px; height: 3px; width: 22px; border: 0; background: rgba(255, 215, 0, 0.45); }
+.bn-dot.active { width: 40px; background: #ffd700; }
+
+.page-home .lx-hero h1 { text-shadow: none; line-height: 1.05; }
+.lx-hero-welcome {
+  display: block;
+  margin-bottom: 10px;
+  color: #872657;
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+.lx-hero-brand { display: block; font-size: clamp(2.2rem, 6.4vw, 4.2rem); }
+.page-home .lx-hero .lx-hero-tag { font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(1.15rem, 2.8vw, 1.5rem); }
+.lx-trust li { border-radius: 2px; border-color: rgba(17, 18, 74, 0.35); letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.72rem; }
+.page-home .glitter-container .sparkle:nth-child(4n) { background: #ffd700; filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.8)); }
+
+/* ---------- Buttons: engraved-label look ---------- */
+.site .lx-btn {
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 14px 34px;
+}
+.site .lx-btn-primary { background: #11124a; color: #ffd700; border-color: #ffd700; }
+.site .lx-btn-primary:hover { background: #ffd700; color: #11124a; border-color: #11124a; }
+.site .lx-btn-light:hover { background: #fea3aa; }
+.lx-wa { background: #11124a; }
+.lx-wa:hover, .lx-wa:focus-visible { background: #ffd700; }
+
+/* ---------- Cards: sharper corners, gold edge, calmer lift ---------- */
+.lx-feature, .lx-occasion, .lx-faq-item, .lx-contact-card, .page-products .product-card {
+  border-radius: 6px;
+  border: 1px solid rgba(255, 215, 0, 0.65);
+}
+.lx-feature:hover, .lx-feature:focus-visible, .lx-occasion:hover, .lx-occasion:focus-visible { transform: translateY(-6px); }
+.lx-feature-name, .lx-occasion-name { letter-spacing: 0.02em; }
+.lx-step { border-radius: 6px; border: 1px solid #ffd700; }
+.lx-gallery-tile { border-radius: 4px; border-color: rgba(255, 215, 0, 0.7); }
+.lx-badges li { border-radius: 2px; letter-spacing: 0.04em; }
+
+/* ---------- Products page ---------- */
+.page-products .product-card:hover { transform: translateY(-6px); }
+.page-products .add-to-cart { border-radius: 2px; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.8rem; }
+
+/* ---------- Footer ---------- */
+.site .business-footer { border-top: 3px double #ffd700; }
+.site .business-footer .footer-section h3 { letter-spacing: 0.02em; }
+.site .business-footer .social-footer-links a { border: 1px solid rgba(255, 215, 0, 0.55); }
+.site .business-footer .social-footer-links a:hover { background: #ffd700; color: #11124a; }
+.site .business-footer ul li a { letter-spacing: 0.04em; }
+
+/* ---------- Toast ---------- */
+.lx-toast { border-radius: 4px; background: #11124a; border-color: #ffd700; }
+
+@media (max-width: 700px) {
+  .lx-hero-media { outline-offset: 5px; }
+  .lx-hero-welcome { letter-spacing: 0.34em; }
+  .site .lx-btn { padding: 13px 26px; }
+}
+
+/* ---------- Finishing touches ---------- */
+.page-home .contact-container { border-radius: 6px; border: 1px solid rgba(255, 215, 0, 0.7); overflow: hidden; }
+.page-home .contact-form input, .page-home .contact-form textarea { border-radius: 2px; }
+.bh-brand, .bh-card, .bh-root { border-radius: 6px; }
+
+/* ---------- Round emblem logos already carry their own gold ring ---------- */
+.site .lx-nav .nav-brand img,
+.bh-root img,
+.bh-card img,
+.site .footer-logo-img {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(17, 18, 74, 0.35));
+}
+.site .lx-nav .nav-brand img { width: 52px; height: 52px; }
+.page-home .about-left img { border: 0; border-radius: 0; background: transparent; box-shadow: none; object-fit: contain; filter: drop-shadow(0 12px 24px rgba(17, 18, 74, 0.4)); }
+
+/* Cart heading sits on the pink page, so it is navy rather than gold */
+.site .lx-head.cart-head .lx-eyebrow,
+.site .lx-head.cart-head .lx-title { color: #11124a; text-shadow: none; }

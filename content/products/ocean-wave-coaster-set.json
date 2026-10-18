@@ -1,0 +1,14 @@
+{
+  "available": true,
+  "name": "Ocean Wave Coaster Set",
+  "category": "Coasters & Trays",
+  "order": 10,
+  "basePrice": 1199,
+  "baseQuantity": "4pc",
+  "availableQuantities": [
+    "4pc",
+    "6pc",
+    "8pc"
+  ],
+  "description": "Swirls of teal, white and gold leaf poured into glossy round coasters, finished with cork backing. Heat- and water-resistant."
+}

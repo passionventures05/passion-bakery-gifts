@@ -1,0 +1,13 @@
+{
+  "available": true,
+  "name": "Candle Gift Trio",
+  "category": "Candle Gift Sets",
+  "order": 110,
+  "basePrice": 1099,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc"
+  ],
+  "description": "Three mini jar candles in our best-loved scents, wrapped in a ribbon-tied gift box."
+}

@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "name": "Oatmeal & Honey Soap",
+  "category": "Bath Soaps",
+  "order": 140,
+  "basePrice": 159,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc",
+    "4pc",
+    "6pc"
+  ],
+  "description": "Ground oats and pure honey for a mild, nourishing wash, ideal for sensitive skin."
+}

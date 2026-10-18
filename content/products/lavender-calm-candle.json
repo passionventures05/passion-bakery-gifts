@@ -1,0 +1,15 @@
+{
+  "available": true,
+  "name": "Lavender Calm Candle",
+  "category": "Jar Candles",
+  "order": 80,
+  "basePrice": 449,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc",
+    "4pc"
+  ],
+  "description": "Soothing lavender and a touch of chamomile for slow evenings. Soy wax with a cotton wick."
+}

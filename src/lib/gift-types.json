@@ -1,0 +1,43 @@
+{
+  "types": [
+    {
+      "id": "resin",
+      "name": "Resin Art",
+      "brand": "Paradise Resin Arts",
+      "logo": "/brands/paradise-resin-arts.png",
+      "tagline": "Glossy, one-of-a-kind keepsakes",
+      "description": "Handcrafted resin coasters, trays, keychains, clocks and framed florals. Every piece is poured, tinted and polished by hand, so no two are ever identical.",
+      "highlights": ["Poured & polished by hand", "Real pressed flowers & gold flakes", "Names, initials & photos on request"],
+      "leadTimeHours": 120,
+      "leadTimeLabel": "5 days",
+      "leadTimeNote": "Resin needs time to cure fully before it is polished and packed.",
+      "categories": ["Coasters & Trays", "Keychains & Jewellery", "Wall Art & Clocks"]
+    },
+    {
+      "id": "candles",
+      "name": "Scented Candles",
+      "brand": "Pine & Glow",
+      "logo": "/brands/pine-and-glow.png",
+      "tagline": "Warm light, softly scented",
+      "description": "Small-batch soy-wax candles in jars, pillars and floating votives, poured with gentle fragrances and cotton wicks for a clean, even burn.",
+      "highlights": ["Soy wax, cotton wicks", "Small-batch, hand-poured", "Custom scents & labels for gifting"],
+      "leadTimeHours": 72,
+      "leadTimeLabel": "3 days",
+      "leadTimeNote": "Candles are poured fresh and left to cure so the scent throws well.",
+      "categories": ["Jar Candles", "Pillar & Floating Candles", "Candle Gift Sets"]
+    },
+    {
+      "id": "soaps",
+      "name": "Handmade Soaps",
+      "brand": "Pearl & Petal",
+      "logo": "/brands/pearl-and-petal.png",
+      "tagline": "Gentle, petal-soft skincare",
+      "description": "Cold-process and melt-and-pour soaps enriched with milk, honey, oats, saffron and floral extracts, wrapped beautifully for gifting.",
+      "highlights": ["Skin-kind natural ingredients", "Floral & milk-based blends", "Wrapped & boxed for gifting"],
+      "leadTimeHours": 48,
+      "leadTimeLabel": "2 days",
+      "leadTimeNote": "Soaps are made ahead; custom shapes, scents and gift boxes need a little extra time.",
+      "categories": ["Bath Soaps", "Soap Gift Boxes"]
+    }
+  ]
+}

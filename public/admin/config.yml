@@ -1,0 +1,159 @@
+# ============================================================================
+#  Decap CMS configuration  –  PassionBakeryNChocos Gifts (resin art, candles, soaps)
+#  >>> BEFORE GOING LIVE, EDIT THESE TWO VALUES (see docs/CMS-SETUP.md) <<<
+#      repo:      your GitHub  "username/repository"
+#      base_url:  the address of your deployed Cloudflare login worker
+# ============================================================================
+backend:
+  name: github
+  repo: passionventures05/passion-gifts
+  branch: main
+  base_url: https://passion-gifts-cms-auth.passionventures.workers.dev
+  auth_endpoint: auth
+  commit_messages:
+    create: 'Add product "{{slug}}"'
+    update: 'Update product "{{slug}}"'
+    delete: 'Delete product "{{slug}}"'
+    uploadMedia: 'Upload photo "{{path}}"'
+    deleteMedia: 'Delete photo "{{path}}"'
+
+# Used only when you run the CMS on your own computer (npm run dev:cms). Ignored on the live site.
+local_backend: true
+
+publish_mode: simple            # saving = published (the site rebuilds in about a minute)
+site_url: https://passionategiftsstore.com
+display_url: https://passionategiftsstore.com
+logo_url: /store-logo.png
+locale: en
+
+media_folder: public/uploads/products
+public_folder: /uploads/products
+
+collections:
+  - name: products
+    label: Products
+    label_singular: Product
+    description: Every gift shown on the website (resin art, candles, soaps). Add a product, change a price or photo, or hide a product.
+    folder: content/products
+    create: true
+    delete: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    identifier_field: name
+    summary: "{{name}}  ·  {{category}}  ·  ₹{{basePrice}}"
+    sortable_fields: ["name", "category", "basePrice", "order"]
+    view_filters:
+      - { label: "Hidden products", field: available, pattern: false }
+      - { label: "No photo yet", field: image, pattern: "^$" }
+    view_groups:
+      - { label: Category, field: category }
+    fields:
+      - label: Product name
+        name: name
+        widget: string
+        hint: "Shown to customers. Each product must have a different name."
+        pattern: ["^.{3,80}$", "Please enter 3 to 80 characters"]
+
+      - label: Photo
+        name: image
+        widget: image
+        required: false
+        hint: "JPG or WebP, at least 800 px wide, under 800 KB. A clear, well-lit photo on a plain background works best."
+
+      - label: Category
+        name: category
+        widget: select
+        hint: "Pick the product type by choosing one of its categories: Resin Art (Coasters & Trays, Keychains & Jewellery, Wall Art & Clocks), Scented Candles (Jar Candles, Pillar & Floating Candles, Candle Gift Sets) or Handmade Soaps (Bath Soaps, Soap Gift Boxes)."
+        options:
+          - "Coasters & Trays"
+          - "Keychains & Jewellery"
+          - "Wall Art & Clocks"
+          - "Jar Candles"
+          - "Pillar & Floating Candles"
+          - "Candle Gift Sets"
+          - "Bath Soaps"
+          - "Soap Gift Boxes"
+
+      - label: Starting price (₹)
+        name: basePrice
+        widget: number
+        value_type: int
+        min: 1
+        hint: "The price for the BASE SIZE chosen below. Other sizes are priced in proportion (2 pieces cost 2 x the 1 piece price)."
+
+      - label: Base size (the size the price above is for)
+        name: baseQuantity
+        widget: select
+        default: "1pc"
+        options:
+          - { label: "250 g", value: "250gm" }
+          - { label: "500 g", value: "500gm" }
+          - { label: "600 g", value: "600gm" }
+          - { label: "750 g", value: "750gm" }
+          - { label: "1 kg", value: "1kg" }
+          - { label: "1.5 kg", value: "1.5kg" }
+          - { label: "2 kg", value: "2kg" }
+          - { label: "2.5 kg", value: "2.5kg" }
+          - { label: "3 kg", value: "3kg" }
+          - { label: "4 kg", value: "4kg" }
+          - { label: "5 kg", value: "5kg" }
+          - { label: "1 piece", value: "1pc" }
+          - { label: "2 pieces", value: "2pc" }
+          - { label: "3 pieces", value: "3pc" }
+          - { label: "4 pieces", value: "4pc" }
+          - { label: "5 pieces", value: "5pc" }
+          - { label: "6 pieces", value: "6pc" }
+          - { label: "7 pieces", value: "7pc" }
+          - { label: "8 pieces", value: "8pc" }
+          - { label: "10 pieces", value: "10pc" }
+          - { label: "12 pieces", value: "12pc" }
+
+      - label: Sizes customers can choose
+        name: availableQuantities
+        widget: select
+        multiple: true
+        min: 1
+        default: ["1pc", "2pc", "3pc"]
+        hint: "Tick every size you sell. Most gifts are sold in pieces. Use EITHER weights OR pieces – not both."
+        options:
+          - { label: "250 g", value: "250gm" }
+          - { label: "500 g", value: "500gm" }
+          - { label: "600 g", value: "600gm" }
+          - { label: "750 g", value: "750gm" }
+          - { label: "1 kg", value: "1kg" }
+          - { label: "1.5 kg", value: "1.5kg" }
+          - { label: "2 kg", value: "2kg" }
+          - { label: "2.5 kg", value: "2.5kg" }
+          - { label: "3 kg", value: "3kg" }
+          - { label: "4 kg", value: "4kg" }
+          - { label: "5 kg", value: "5kg" }
+          - { label: "1 piece", value: "1pc" }
+          - { label: "2 pieces", value: "2pc" }
+          - { label: "3 pieces", value: "3pc" }
+          - { label: "4 pieces", value: "4pc" }
+          - { label: "5 pieces", value: "5pc" }
+          - { label: "6 pieces", value: "6pc" }
+          - { label: "7 pieces", value: "7pc" }
+          - { label: "8 pieces", value: "8pc" }
+          - { label: "10 pieces", value: "10pc" }
+          - { label: "12 pieces", value: "12pc" }
+
+      - label: Description
+        name: description
+        widget: text
+        required: false
+        hint: "A sentence or two about the materials, scent or finish. Shown when a customer opens the product."
+
+      - label: Show on website
+        name: available
+        widget: boolean
+        default: true
+        hint: "Switch OFF to hide the product without deleting it (e.g. out of stock)."
+
+      - label: Position in the list
+        name: order
+        widget: number
+        value_type: int
+        required: false
+        hint: "1 = shown first. Leave empty to put the product at the end. Tip: use 5 to place it before the product that is at 10."

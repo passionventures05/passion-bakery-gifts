@@ -1,0 +1,14 @@
+{
+  "available": true,
+  "name": "Pine & Cedar Pillar Candle",
+  "category": "Pillar & Floating Candles",
+  "order": 90,
+  "basePrice": 599,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc"
+  ],
+  "description": "A tall hand-poured pillar with a fresh forest scent of pine needles, cedar and a hint of smoke."
+}

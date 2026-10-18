@@ -1,0 +1,13 @@
+{
+  "available": true,
+  "name": "Rose Petal Floating Candles",
+  "category": "Pillar & Floating Candles",
+  "order": 100,
+  "basePrice": 499,
+  "baseQuantity": "6pc",
+  "availableQuantities": [
+    "6pc",
+    "12pc"
+  ],
+  "description": "Floating candles studded with dried rose petals. Lovely for festive tables, bowls and decor."
+}

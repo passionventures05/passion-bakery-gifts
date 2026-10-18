@@ -1,0 +1,13 @@
+{
+  "available": true,
+  "name": "Petal Soap Gift Box",
+  "category": "Soap Gift Boxes",
+  "order": 150,
+  "basePrice": 699,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc"
+  ],
+  "description": "Four of our favourite soaps nestled in a ribboned keepsake box with a handwritten card."
+}

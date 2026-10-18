@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "name": "Rose & Milk Soap",
+  "category": "Bath Soaps",
+  "order": 120,
+  "basePrice": 149,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc",
+    "4pc",
+    "6pc"
+  ],
+  "description": "A softly scented bar with rose petals and milk protein for gentle cleansing and a smooth feel."
+}

@@ -1,0 +1,15 @@
+{
+  "available": true,
+  "name": "Floral Keepsake Keychain",
+  "category": "Keychains & Jewellery",
+  "order": 30,
+  "basePrice": 249,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc",
+    "5pc"
+  ],
+  "description": "Real pressed flowers sealed in clear resin, with a gold-tone ring. A small, pretty gift for anyone."
+}

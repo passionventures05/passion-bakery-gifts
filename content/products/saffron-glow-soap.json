@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "name": "Saffron Glow Soap",
+  "category": "Bath Soaps",
+  "order": 130,
+  "basePrice": 179,
+  "baseQuantity": "1pc",
+  "availableQuantities": [
+    "1pc",
+    "2pc",
+    "3pc",
+    "4pc",
+    "6pc"
+  ],
+  "description": "Saffron strands and sandalwood in a rich, golden bar that leaves skin soft and fresh."
+}
