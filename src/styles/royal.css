@@ -62,6 +62,16 @@ html { scrollbar-color: #7e5dae #ffb6c1; }
 }
 .site .lx-nav .nav-links a:hover::after,
 .site .lx-nav .nav-links a:focus-visible::after { transform: scaleX(1); }
+/* seven menu links: tighten them on small laptops so the brand name keeps its room */
+@media screen and (min-width: 961px) and (max-width: 1180px) {
+  .site .lx-nav .nav-links { gap: 0; }
+  .site .lx-nav .nav-links a { padding: 10px 9px; letter-spacing: 0.1em; }
+  .site .lx-nav .nav-links a::after { left: 9px; right: 9px; }
+}
+@media screen and (min-width: 961px) and (max-width: 1040px) {
+  .site .lx-nav .nav-links a { padding: 10px 6px; letter-spacing: 0.05em; }
+  .site .lx-nav .nav-links a::after { left: 6px; right: 6px; }
+}
 .site .lx-nav .nav-links a.active {
   background: #11124a;
   color: #ffd700;

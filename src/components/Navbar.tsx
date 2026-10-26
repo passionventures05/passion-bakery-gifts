@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 import { reviews } from "@/lib/reviews";
 import Icon from "./Icon";
 
-export type NavActive = "home" | "products" | "special-order" | "cart";
+export type NavActive = "home" | "products" | "special-order" | "hiring" | "cart";
 
 interface NavbarProps {
   active?: NavActive;
@@ -47,6 +47,7 @@ export default function Navbar({ active, onHome = false }: NavbarProps) {
     ...(reviews.length ? [{ href: section("customer-reviews"), label: "Reviews" }] : []),
     { href: section("contact-me"), label: "Contact" },
     { href: "/special-order/", label: "Special Order", className: cls("special-order"), current: cur("special-order") },
+    { href: "/hiring/", label: "Careers", className: cls("hiring"), current: cur("hiring") },
   ];
 
   return (
