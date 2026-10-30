@@ -15,11 +15,14 @@ export const launch = {
   enabled: true,
 
   /** Launch date & time in INDIA time (IST). Format: YYYY-MM-DDTHH:mm:ss+05:30 */
-  launchAt: "2026-10-20T13:00:00+05:30",
+  launchAt: "2026-11-06T12:40:00+05:30",
 
   /** Words shown on the curtains. */
   title: "Grand Launch",
-  tagline: "Something handcrafted is about to begin",
+  tagline: "Something beautifully wrapped is about to arrive",
+
+  /** Store logo shown on the curtains (a small copy of /store-logo.png, used only here). */
+  logo: "/store-logo-480.webp",
 
   /** On YOUR laptop: the ribbon can be cut during the last N seconds of the countdown. */
   cutWindowSeconds: 30,
@@ -43,7 +46,12 @@ export const launch = {
     curtainSheen: "#7e5dae",
     ink: "#1d0e3d", // text colour on the gold ribbon
     glow: "rgba(255, 215, 0, 0.6)",
-    confetti: ["#d8b45a", "#f6e7b4", "#ffffff", "#fea3aa", "#7e5dae", "#c9b3ee"] as readonly string[],
+    /** Bright, festive colours for the party poppers, streamers and little gift boxes. */
+    confetti: ["#ff4f9a", "#ffd23f", "#a66bff", "#2fd6c4", "#ff6f61", "#4db6ff", "#ffffff", "#c9b3ee"] as readonly string[],
+    /** Balloon colours (brand red and gold, then bright party colours). */
+    balloons: ["#c8102e", "#e8b923", "#ff4f9a", "#a66bff", "#2fd6c4", "#ff6f61", "#4db6ff", "#ffffff"] as readonly string[],
+    /** Gift-shop extras: tiny wrapped presents and hearts in the confetti, balloons carrying gift boxes. */
+    giftProps: true as boolean,
   },
 } as const;
 
